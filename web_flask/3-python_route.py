@@ -19,7 +19,8 @@ def hello_hbnb():
 def hello_c(text):
     return 'C ' + text.replace('_', ' ')
 
-@app.route('/python/(<text>)', strict_slashes=False)
+@app.route('/python/', strict_slashes=False)
+@app.route('/python/<text>', strict_slashes=False)
 def changing_python(text="cool"):
     return "Python " + text.replace('_',' ')
 
