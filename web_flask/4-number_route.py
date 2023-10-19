@@ -20,16 +20,15 @@ def hello_c(text):
     return 'C ' + text.replace('_', ' ')
 
 
-@app.route('/python/', defaults={'text': "is cool"}, strict_slashes=False)
+@app.route('/python/', defaults={'text': 'is cool'}, strict_slashes=False)
 @app.route('/python/<text>', strict_slashes=False)
-def changing_python(text):
-    return "Python " + text.replace('_', ' ')
+def python(text):
+    return 'Python ' + text.replace('_', ' ')
 
 
 @app.route('/number/<int:n>', strict_slashes=False)
-def display_n(n):
-    return f"{n} is a number"
+def number(n):
+    return "{} is a number".format(n)
 
-
-if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000)
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=5000)
