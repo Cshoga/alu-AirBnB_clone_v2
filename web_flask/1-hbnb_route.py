@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" A script that displays Hello HBNB on the page """
+""" This script displays Hello HBNB on the page """
 from flask import Flask
 
 app = Flask(__name__)
