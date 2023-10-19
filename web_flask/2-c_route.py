@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" A script that displays C followed by the value of the text variable """
+""" A script that displays C """
 from flask import Flask
 
 app = Flask(__name__)
