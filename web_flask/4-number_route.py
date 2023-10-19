@@ -25,10 +25,11 @@ def hello_c(text):
 def changing_python(text):
     return "Python " + text.replace('_', ' ')
 
+
 @app.route('/number/<n>', strict_slashes=False)
 def display_n(n):
     if n == int(n):
-        return "n is a number"
+        return f"{n} is a number"
 
 
 if __name__ == '__main__':
