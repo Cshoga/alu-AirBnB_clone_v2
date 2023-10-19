@@ -1,6 +1,5 @@
 #!/usr/bin/python3
-# Script for Flask web application.
-
+""" Script for Flask web application. """
 from flask import Flask
 
 app = Flask(__name__)
