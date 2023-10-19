@@ -2,24 +2,23 @@
 """ Script that displays C followed by the value of the text variable """
 from flask import Flask
 
-
 app = Flask(__main__)
 
 
-@app.route('/')
+@app.route('/', strict_slashes=False)
 def index():
     return "Hello HBNB"
 
 
-@app.route('/hbnb')
+@app.route('/hbnb', strict_slashes=False)
 def hbnb():
     return "HBNB"
 
 
-@app.route('/c/<text>')
+@app.route('/c/<text>', strict_slashes=False)
 def change_name(text):
     changed_text = text.replace('_', ' ')
-    return changed_text
+    return f'C {changed_text}'
     
 
 if __name__=="__main__":
