@@ -5,7 +5,8 @@ from flask import Flask
 
 app = Flask(__name__)
 
-@app.route('/')
+
+@app.route('curl 0.0.0.0:5000/hbnb')
 def index():
     return "Hello HBNB"
 
