@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-"""Starts a Flask web application"""
+"""The script that Starts a Flask web application"""
 
 from models import storage
 from models.state import State
